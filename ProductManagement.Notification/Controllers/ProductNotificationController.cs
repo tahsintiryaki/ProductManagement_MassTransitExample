@@ -1,25 +1,27 @@
 ﻿using MassTransit;
+using Microsoft.AspNetCore.Mvc;
 using ProductManagement.MessageContracts;
 using ProductManagement.MessageContracts.Consumers;
 
-namespace ProductManagement.Facebook
+namespace ProductManagement.Notification.Controllers
 {
-    internal class Program
+    public class ProductNotificationController : Controller
     {
-        static async Task Main(string[] args)
+        public async Task<IActionResult> Index()
         {
+
             var bus = BusConfigurator.ConfigureBus(factory =>
             {
-                factory.ReceiveEndpoint(RabbitMqConstants.FacebookServiceQueue, endpoint =>
+                factory.ReceiveEndpoint(RabbitMqConstants.NotificationServiceQueue, endpoint =>
                 {
-                    endpoint.Consumer<ProductFacebookEventConsumer>();
-
+                    endpoint.Consumer<ProductNotificationEventConsumer>();
                 });
-
             });
+
             await bus.StartAsync();
             await Task.Run(() => Console.ReadLine());
             await bus.StopAsync();
+            return View();
         }
     }
 }

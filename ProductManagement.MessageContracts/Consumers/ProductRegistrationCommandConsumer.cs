@@ -1,5 +1,7 @@
 ﻿using MassTransit;
 using ProductManagement.MessageContracts.Commands;
+using ProductManagement.MessageContracts.Events;
+using ProductManagement.MessageContracts.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +19,13 @@ namespace ProductManagement.MessageContracts.Consumers
             Console.WriteLine($"Facebook'ta yayınlanacaktır.");
             Console.WriteLine($"Instagram'da yayınlanacaktır.");
             Console.WriteLine("*********************");
+
+            //after  the message is consumed, the publish event is throw for Instagram, Facebook and notification services because these services listen for this event to complete the next action
+            await context.Publish<IProductEvent>(new Product
+            {
+                ProductName = context.Message.ProductName,
+                Quantity = context.Message.Quantity
+            });
         }
     }
 }
