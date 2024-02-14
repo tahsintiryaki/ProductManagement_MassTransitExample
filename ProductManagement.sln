@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductManagement.API", "ProductManagement.API\ProductManagement.API.csproj", "{F02A5FE1-2E6A-41E6-AC6E-CCBEA8685ABC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductManagement.Registration", "ProductManagement.Registration\ProductManagement.Registration.csproj", "{402A413A-5F0B-4A78-BFEC-BD7C76966FE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductManagement.Facebook", "ProductManagement.Facebook\ProductManagement.Facebook.csproj", "{BD86EC86-7FCF-4723-BDD8-037DC8C3B71D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductManagement.Instagram", "ProductManagement.Instagram\ProductManagement.Instagram.csproj", "{1D82D1D5-471E-4254-988A-3F6579EF3198}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductManagement.Notification", "ProductManagement.Notification\ProductManagement.Notification.csproj", "{5587AEA2-A507-48B7-965C-591C8E73B7FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductManagement.MessageContracts", "ProductManagement.MessageContracts\ProductManagement.MessageContracts.csproj", "{E7BADBB6-23D6-4BB8-8CA8-FCBACBA8EF4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F02A5FE1-2E6A-41E6-AC6E-CCBEA8685ABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F02A5FE1-2E6A-41E6-AC6E-CCBEA8685ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F02A5FE1-2E6A-41E6-AC6E-CCBEA8685ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F02A5FE1-2E6A-41E6-AC6E-CCBEA8685ABC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{402A413A-5F0B-4A78-BFEC-BD7C76966FE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{402A413A-5F0B-4A78-BFEC-BD7C76966FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{402A413A-5F0B-4A78-BFEC-BD7C76966FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{402A413A-5F0B-4A78-BFEC-BD7C76966FE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD86EC86-7FCF-4723-BDD8-037DC8C3B71D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD86EC86-7FCF-4723-BDD8-037DC8C3B71D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD86EC86-7FCF-4723-BDD8-037DC8C3B71D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD86EC86-7FCF-4723-BDD8-037DC8C3B71D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D82D1D5-471E-4254-988A-3F6579EF3198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D82D1D5-471E-4254-988A-3F6579EF3198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D82D1D5-471E-4254-988A-3F6579EF3198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D82D1D5-471E-4254-988A-3F6579EF3198}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5587AEA2-A507-48B7-965C-591C8E73B7FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5587AEA2-A507-48B7-965C-591C8E73B7FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5587AEA2-A507-48B7-965C-591C8E73B7FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5587AEA2-A507-48B7-965C-591C8E73B7FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7BADBB6-23D6-4BB8-8CA8-FCBACBA8EF4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7BADBB6-23D6-4BB8-8CA8-FCBACBA8EF4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7BADBB6-23D6-4BB8-8CA8-FCBACBA8EF4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7BADBB6-23D6-4BB8-8CA8-FCBACBA8EF4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5EE4859-8FEE-4FF2-832E-47C5171D9BE2}
+	EndGlobalSection
+EndGlobal
