@@ -1,3 +1,5 @@
+using ProductManagement.Notification.Hubs;
+
 namespace ProductManagement.Notification
 {
     public class Program
@@ -8,7 +10,7 @@ namespace ProductManagement.Notification
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-
+            builder.Services.AddSignalR();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -25,10 +27,10 @@ namespace ProductManagement.Notification
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.MapHub<NotificationHub>("/notificationhub");
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=ProductNotification}/{action=Index}/{id?}");
 
             app.Run();
         }

@@ -19,8 +19,6 @@ namespace ProductManagement.Notification.Controllers
             });
 
             await bus.StartAsync();
-            await Task.Run(() => Console.ReadLine());
-            await bus.StopAsync();
             return View();
         }
     }
