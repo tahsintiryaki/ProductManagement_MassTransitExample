@@ -1,3 +1,4 @@
+using ProductManagement.MessageContracts.Hubs;
 using ProductManagement.Notification.Hubs;
 
 namespace ProductManagement.Notification
@@ -10,7 +11,12 @@ namespace ProductManagement.Notification
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-            builder.Services.AddSignalR();
+            builder.Services.AddSignalR().AddJsonProtocol(options => {
+                options.PayloadSerializerOptions.PropertyNamingPolicy = null;
+            });
+       
+
+            builder.Services.AddSingleton<IHubNotificationDispatcher, HubNotificationDispatcher>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

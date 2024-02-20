@@ -10,7 +10,7 @@
     connection.on("receiveProductNotification", message => {
         console.log(message)
         $("#message").append("<p id=\"p_" + ++count + "\" style=\"display:none;\"></p>");
-        $("#p_" + count).html(message.productName + " " + message.quantity + " adet.")
+        $("#p_" + count).html(message.ProductName + " " + message.Quantity + " adet.")
         $("#p_" + count).fadeIn(2000)
     });
 </script>
